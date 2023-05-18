@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HAND TO HAND HARMONY </title>
+    <link rel="shortcut icon" href="imagenes/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+
+
+<script> 
+    
+    var current = 0;
+var imagenes = new Array();
+ 
+$(document).ready(function() {
+    var numImages = 6;
+    if (numImages <= 3) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+ 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    });
+ 
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    }); 
+ });
+</script>
+    
+<script> 
+      function vermas(id){
+      if(id=="mas"){
+      document.getElementById("desplegar").style.display="block";   
+      document.getElementById("mas").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegar").style.display="none";
+      document.getElementById("mas").style.display="inline";
+      }
+      }
+
+
+      function vermass(id){
+      if(id=="mass"){
+      document.getElementById("desplegarr").style.display="block";   
+      document.getElementById("mass").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegarr").style.display="none";
+      document.getElementById("mass").style.display="inline";
+      }
+      }
+      function vermasss(id){
+      if(id=="masss"){
+      document.getElementById("desplegarrr").style.display="block";   
+      document.getElementById("masss").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegarrr").style.display="none";
+      document.getElementById("masss").style.display="inline";
+      }
+      }
+
+      function vermassss(id){
+      if(id=="massss"){
+      document.getElementById("desplegarrrr").style.display="block";   
+      document.getElementById("massss").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegarrrr").style.display="none";
+      document.getElementById("massss").style.display="inline";
+      }
+      }
+</script>
+
+
+<header>
+    <div class="inicio">     
+        <section class="wrapper">
+            <h1 class="logo"><p class="glitch"> HAND-TO-HAND </p></h1>
+            <h2 class="logo2">HARMONY </h2>
+          <div style="text-align: right;
+          padding: px 30px 0 0;">
+            <nav>
+              <ul> 
+              <li><a class="ancla" href="#inicio" style="position: absolute; left: calc(46% - 2px); top: calc(60px - 10px);"> Inicio </a></li>
+              <li><a class="ancla" href="#sinopsis" style="position: absolute; left: calc(53% - 2px); top: calc(60px - 10px);"> Sinopsis </a></li> 
+              <li><a class="ancla" href="#manual" style="position: absolute; left: calc(62% - 2px); top: calc(60px - 10px);"> Guía </a></li> 
+              <li><a class="ancla" href="#descargar" style="position: absolute; left: calc(69% - 2px); top: calc(60px - 10px);"> Descarga </a></li> 
+              <li><a class="ancla" href="#contacto" style="position: absolute; left: calc(78% - 2px); top: calc(60px - 10px);"> Contactos </a></li>             
+              </ul>
+            </nav>
+          </div>
+        </section>
+    </div>
+  </header>
+
+
+
+  
+<section class="contenido wrapper">
+  
+  <div style="margin-left: 5%;">
+    <div class="sliderr">
+      <ul class="ull">
+        <li class="lii">
+          <img class="imgg" src="Imagenes/1.png">
+        </li>
+        <li class="lii">
+          <img class="imgg" src="Imagenes/2.png">
+        </li>
+        <li class="lii">
+          <img class="imgg" src="Imagenes/3.png">
+        </li>
+        <li class="lii">
+          <img class="imgg" src="Imagenes/4.png">
+        </li>
+        <li class="lii">
+          <img class="imgg" src="Imagenes/5.png">
+        </li>
+        <li class="lii">
+          <img class="imgg" src="Imagenes/6.png">
+        </li>
+        <li class="lii">
+          <img class="imgg" src="Imagenes/7.png">
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  </div></br></br>
+  </section>
+  
+  <div class="modal">
+    <center><a name="cen" href="#cen" class="btn">Ver Demo</a></center>
+    <div class="video-container">
+      <video src="hola.mp4" controls></video>
+
+      <span class="close" >&#10006;</span>
+    </div>
+      </div>
+
+<a name="inicio"><section class="contenido wrapper">
+ 
+      <div class="apa" style="margin-left: 10%; display: inline-block; width: 45%; margin-top: 6%; margin-bottom: 8%;">
+          <h2 style="font-family: Montserrat Thin;"> Introducción</h2>
+          <h3>En la actualidad, diversas plataformas y aplicaciones, especialmente 
+            los videojuegos se han creado para proporcionar a sus usuarios una 
+            experiencia de calidad al momento de ejecutarlos desde la comodidad de 
+            su móvil u ordenador, no obstante, los juegos más populares en la red 
+            no pueden ser disfrutados por ciertos grupos debido a sus diversidades 
+            funcionales. </h3>
+          <a class="en" name="en" href="#inicio" onclick="vermas('mas');" id="mas">LEER MAS </a>
+        </p>
+         <p  id="desplegar" style="display:none; margin: 30px;">
+          
+          <b >Entre estos grupos se encuentra la comunidad sordaue en general no 
+            acceden a varias actividades o no pueden realizarlas como se prevé en un inicio.</br></br>
+
+            Considerando esta realidad, nos hemos propuesto
+            a desarrollar un videojuego  que aborda la forma básica de comunicación de 
+            la Comunidad Sorda, de tal manera que se pueda interactuar en el juego con 
+            el abecedario en señas, sustituyendo a los controles comunes del teclado 
+            que se usan en juegos de PC. </br></br>
+
+            El videojuego será destinado principalmente para los integrantes del Grupo de 
+            Estudio de Aproximación a la Sordera, no obstante, también puede ser manejado 
+            por familias que quieran y busquen aprender a relacionarse con una persona no 
+            oyente, utilizando el método de mando propio del juego.</br></br>
+
+            Debido a que queremos contribuir en normalizar la integración de esta comunidad 
+            en la sociedad, nuestro videojuego no tendrá fines de lucro, puesto que lo vemos 
+            como una herramienta capaz de aportar a algo más grande y beneficioso para todos.</br></br>
+
+            “Una persona sorda puede hacer cualquier cosa igual que un oyente, excepto oír” (King Jordan)
+            </br></br>
+            </b>
+          <a class="en" href="#inicio" onclick="vermas('menos');" id="menos">LEER MENOS</a>
+          </p> 
+        
+      </div>
+
+
+
+
+      <div class="apa" style="margin-left: 2%; display: inline-block; width: 43%; margin-top: 6%;">
+          <h2> Resumen </h2>
+          <h3 > Hand-to-hand Harmony, es un videojuego 2D, orientado y conceptualizado 
+            en la Comunidad Sorda. Su creación pretende ser una alternativa para aquellos 
+            que deseen aprender sobre el Alfabeto Dactilológico de la Lengua de Señas 
+            Ecuatoriana, de una manera sencilla e interesante, para así crear una cercanía 
+            con conocidos y familiares que formen parte de esta comunidad. </h3>
+            <a class="en" href="#inicio" onclick="vermass('mass');" id="mass">LEER MAS </a>
+          
+           <p  id="desplegarr" style="display:none; margin: 30px;">
+            
+            <b >El presente producto se compone de dos programas: un teclado virtual y el 
+              videojuego. Por una parte, el teclado virtual fue desarrollado en Phyton, 
+              lenguaje de programación que permite el uso de librerías necesarias para la 
+              detección de gestos dactilológicos, por medio de una serie de coordenadas, 
+              líneas y puntos; dejando de lado el manejo del teclado, e implementando el 
+              uso de cámara. Mientras que el videojuego, utiliza este medio para controlar 
+              el movimiento de los personajes, en base al alfabeto dactilológico de la 
+              Lengua de Señas Ecuatoriana, exceptuando las letras que requieran un movimiento 
+              en particular. </br></br>
+
+              Hand-to-Hand Harmony se desarrolla en una historia contada a través de varias 
+              pistas y pinturas (minijuegos) que el protagonista, un joven de una pequeña aldea, 
+              empieza a encontrar tras recibir una misteriosa carta la cual le informa que es el 
+              elegido para descubrir y divulgar la verdad acerca de la creación de los humanos.</br></br>
+            </b>
+          
+            <a class="en" href="#inicio" onclick="vermass('menos');" id="menos">LEER MENOS</a>
+            </p>
+       </div>   
+  </section>
+</a>
+
+
+<a name="sinopsis"><section class="contenido wrapper">
+</br></br></br></br></br></br></br></br>
+      <div style="display: flex; flex-direction: row;">
+        <div style="width: 50%;">
+          <h2>Sinopsis</h1>
+          <h3 >La historia comienza con el protagonista despertando y encontrando una carta 
+            sobre su mesa. En la carta, se revela la verdad acerca del origen de la humanidad 
+            y se le informa que él es el elegido para compartir la leyenda de Hand-to-Hand 
+            Harmony con el mundo.</h3>           
+            <a class="en" name="ver" href="#sinopsis" onclick="vermasss('masss');" id="masss">LEER MAS </a>
+        
+            <p  id="desplegarrr" style="display:none; margin: 30px;">
+           <b>A medida que se adentra en una emocionante aventura, deberá 
+            descubrir cada aspecto de esta historia y evitar que el malvado culto, que ha 
+            mantenido en secreto esta verdad durante tanto tiempo, lo detenga. </b> </br></br>
+            <a class="en" href="#sinopsis" onclick="vermasss('menos');" id="menos">LEER MENOS</a>
+            </p>
+        </div>
+
+        <div style="width: 50%;">
+            <div class="slider">
+                <ul>
+                  <li>
+                     <center> <img src="Imagenes/img.jpg"></center>
+                  </li>
+                  <li>
+                     <center> <img src="Imagenes/img2.jpg"></center>
+                  </li>
+                  <li>
+                     <center> <img src="Imagenes/img3.jpg"></center>
+                  </li>
+                  <li>
+                     <center> <img src="Imagenes/img4.jpg"></center>
+                  </li>
+                  <li>
+                     <center> <img src="Imagenes/img5.jpg"></center>
+                  </li>
+                  <li>
+                     <center> <img src="Imagenes/img6.jpg"></center>
+                  </li>
+                  <li>
+                     <center> <img src="Imagenes/img7.jpg"></center>
+                  </li>
+                  <li>
+                     <center> <img src="Imagenes/img8.jpg"></center>
+                  </li>
+                </ul>
+           </div>
+          </div>
+      </div>
+</section></a>
+
+
+<a name="manual"><section class="contenido wrapper">
+  <div class="apa" style="margin-left: 29%; width: 900px; margin-bottom: 6%; margin-top: 7%;">
+    <h2> Guía de uso y mantenimiento </h2>
+    <h3 >1. Instalación de las librerías y dependencias necesarias: </br></br>
+      En primera instancia, se debe de tener todas las librerías y dependencias 
+      necesarias para ejecutar el programa. En el código proporcionado se utilizaron 
+      las librerías `cv2`, `numpy`, `pyautogui`, `pickle`, `sklearn`, `imutils` y 
+      `time`. Es importante verificar que todas estas librerías estén instaladas en 
+      el equipo antes de continuar. </h3>
+      <a class="en" name="vermass" href="#vermass" onclick="vermassss('massss');" id="massss">LEER MAS </a>
+    
+     <p  id="desplegarrrr" style="display:none; margin: 30px;">
+      
+      <b > 2. Entrenamiento del modelo </br></br>
+        Antes de ejecutar el programa, se debe entrenar un modelo para reconocer 
+        las señas que se utilizarán en el juego. En el código proporcionado, se 
+        utilizó un modelo SVM pre-entrenado con el dataset de señas de la 
+        Universidad de Washington. En caso de que se desee utilizar señas 
+        personalizadas, se deberá entrenar un modelo propio. Para ello, se pueden 
+        utilizar herramientas como TensorFlow o Keras para entrenar un modelo de 
+        aprendizaje profundo o utilizar otras técnicas de aprendizaje automático 
+        para entrenar un modelo SVM o similar.</br></br>
+        
+        3. Configuración del programa: </br></br>
+        Una vez que se tiene un modelo entrenado, se procede a configurar el 
+        programa para que pueda reconocer las señas específicas que se utilizarán 
+        en el juego. En el código proporcionado, se definen las señas a utilizar y 
+        se configura el modelo para que las reconozca. Se puede modificar este código 
+        para agregar o quitar señas y ajustar los parámetros del modelo según sea 
+        necesario.</br></br>
+        
+        4. Calibración de la cámara: </br></br>
+        Antes de empezar a utilizar el programa, se requiere calibrar la cámara que 
+        se utilizará para capturar las señas. En el código, se usa una función de 
+        calibración para ajustar la cámara y asegurarse de que las señas se reconozcan 
+        correctamente.</br></br>
+        
+        5. Ejecución del programa: </br></br>
+        Una vez que se ha realizado la calibración y configuración necesarias, se puede 
+        ejecutar el programa para empezar a reconocer las señas y utilizarlas como entrada 
+        de teclado virtual en el juego. Las señas reconocidas se interpretan como entrada 
+        de teclado virtual utilizando la librería PyAutoGUI.</br></br>
+        
+        6. Manejo en el juego: </br></br>
+        Para usar el teclado virtual dentro del videojuego, se deberá asegurar de que el 
+        juego esté configurado correctamente para recibir la entrada del mismo. Dentro de 
+        este último, la función `pyautogui.press` simula las pulsaciones de teclado en el 
+        juego, que se configuran según los controles del juego los cuales son: “A”: 
+        izquierda; “E”: derecha; “V”: subir; “W”: bajar; “L”: interactuar y las que se 
+        mencionaron en el último apartado del proceso de elaboración del teclado virtual 
+        que se utilizan para escribir dentro del videojuego. </br></br>
+        
+        7. Descarga y uso del producto: </br></br>
+        En cuanto al uso del videojuego, una vez ingresado a la página web, se deberá ir al apartado 
+        de descarga e instalar el teclado virtual y el videojuego, los cuales requieren un 
+        sistema operativo Windows de 64 bits. Al ser ejecutables, si es un usuario que quiere 
+        utilizar el producto sin necesidad de realizar cambios dentro del mismo, no es 
+        indispensable la instalación de ningún otro programa, solo el uso de una cámara.</br></br>
+        
+      </b>
+    
+      <a class="en" href="#manual" onclick="vermassss('menos');" id="menos">LEER MENOS</a>
+      </p>
+  </div>
+</section></a>
+
+<a name="descargar"><section class="contenido wrapper">
+   
+  <div style="display: flex; margin-left: 10%; margin-bottom: 6%; margin-top: 10%; ">
+    
+    <div style="width: 33.33%;">
+      <h2 style="font-family: Montserrat Thin;"> Videojuego </h2></br></br></br>
+      <img style="width: 80%; margin-left: 10%;" src="Imagenes/videojuego.png">
+      <br></br>
+     <center> <a class="des" href="https://mega.nz/folder/80IxmDpY#KkHAKZOY0mzuIj0kbYmEcw" style="font-size: 20px; color: white;">Descarga</a></center>
+    </div>
+  
+    <div style="width: 33%; margin-right: 20px; border:3px solid #1FAED4; border-radius:22px;"></br>
+      <h2 style="font-family: Montserrat Thin;"> Precio </h2>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 40px;"> Gratis </h3>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> Requisitos: </h3>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> entrada de video </h3>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> windows 10 </h3>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> 64 bits </h3></br>
+    </div>
+  
+    <div style="width: 33.33%; ">
+      <h2 style="font-family: Montserrat Thin;"> Teclado virtual </h2></br></br>
+      <img style="width: 55%; margin-left: 20%;" src="Imagenes/teclado.png">
+      <center><a class="des" href="https://mega.nz/folder/V9p3DYIY#l0bEZtPP8YrHB_1dWOyU-Q" style="font-size: 20px; color: white;">Descarga</a></center>
+    </div>
+  </div>
+  
+</section></a>
+
+
+<a name="contacto"><section class="contenido wrapper">
+  <h2 class="titulo" style="margin-left: 8%;"> Contactos </h2></br>
+
+    <div class="apa" style="margin-left: 8%; display: inline-block; width: 45%;">
+      <h2 style="font-family: Montserrat Thin;"> Página web </h2>
+      <h3><a href="https://sites.google.com/view/geasecu/inicio" style="text-decoration:none; color: #fff;"> Link de la página </a></h3>
+      <h3> Celular: </br></br>
+      GEAS: 0963869529 </br></br>
+      Psi. Cl. Raúl Lara: 0995450960 </h3>
+    </div>
+
+
+    <div class="apa" style="margin-left: 2%; display: inline-block; width: 43%; margin-bottom: 10%;">
+      <h2> Servicio Técnico </h2>
+      <h3> Nicolas B. Cl: 0961938724 </br></br>
+      Stefany V.  Cl: 0981566205 </br></br>
+      Naomi G.  Cl: 0999714038 </br></br>
+      Jonathan C.  Cl: 099533639 </br>
+      </h3>
+</section></a>
+
+
+
+
+<script>
+  const btn=document.querySelector(".btn");
+  const videoContainer= document.querySelector(".video-container");
+  const close= document.querySelector(".close");
+
+ btn.addEventListener("click",()=>{
+   videoContainer.classList.add("show");
+ })
+ close.addEventListener("click",()=>{
+   videoContainer.classList.remove("show");
+ })
+</script>
+</head>
+</html>
